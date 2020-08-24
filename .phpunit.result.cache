@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":186:{a:2:{s:7:"defects";a:1:{s:57:"App\Tests\SpecialSumFeatureTest::special_sum_should_works";i:3;}s:5:"times";a:1:{s:57:"App\Tests\SpecialSumFeatureTest::special_sum_should_works";d:0.018;}}}
