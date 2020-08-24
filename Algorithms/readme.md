@@ -22,3 +22,11 @@ k = 30, n = 30 -> 114449595062769120
 
 k = 100, n = 100 -> You tell us this one please ;)
 
+To run, execute
+```
+composer install
+```
+After, to run test and see result, execute:
+```
+vendor/bin/phpunit
+```

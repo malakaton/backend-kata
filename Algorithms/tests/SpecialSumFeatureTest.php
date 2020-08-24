@@ -60,7 +60,9 @@ final class SpecialSumFeatureTest extends KernelTestCase
     public function special_sum_should_works(): void
     {
         foreach($this->simulation as $simulate) {
-            self::assertEquals($simulate['result'], (new SpecialSum($simulate['k'], $simulate['n']))->__invoke());
+            $result = (new SpecialSum($simulate['k'], $simulate['n']))->__invoke();
+            echo "k = {$simulate['k']}, n = {$simulate['n']} => {$result} \n";
+            self::assertEquals($simulate['result'], $result);
         }
     }
 }
