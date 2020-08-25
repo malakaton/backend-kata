@@ -47,5 +47,14 @@ better than assertEquals(true, $stuff))
 
 It should take you 10-15 minutes to complete this!
 
+To work, execute
+```
+composer install
+```
+After, to run test and see result, execute:
+```
+vendor/bin/phpunit
+```
+
 
 Good luck!

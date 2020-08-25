@@ -22,7 +22,7 @@ k = 30, n = 30 -> 114449595062769120
 
 k = 100, n = 100 -> You tell us this one please ;)
 
-To run, execute
+To work, execute
 ```
 composer install
 ```
