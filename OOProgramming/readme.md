@@ -27,3 +27,13 @@ id: 7408
 date: 2011-09-10 17:20:00
 url: https://www.ulabox.com/producto/marques-de-riscal-vino-tinto-reserva-d-o-rioja/7408
 
+To run and test the application
+<br>
+<br>First run:
+```
+$backend-kata/OOProgramming: composer install
+```
+After execute this command (php bin/console app:products-parsing) on terminal:
+```
+$backend-kata/OOProgramming: php bin/console app:products-parsing
+```
