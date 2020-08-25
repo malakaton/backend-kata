@@ -13,8 +13,8 @@
 
 
 ```xml
-<item>
-	<title>Marqués de Riscal Vino Tinto Reserva D.O. Rioja</title>
+<item>parse
+	<title>Marquï¿½s de Riscal Vino Tinto Reserva D.O. Rioja</title>
 	<link>https://www.ulabox.com/producto/marques-de-riscal-vino-tinto-reserva-d-o-rioja/7408</link>
 	<pubDate>Mon, 10 Sep 2011 17:20:00 +0100</pubDate>
 </item>
@@ -22,7 +22,7 @@
 
 And Product object should look like
 
-name: Marqués de Riscal Vino Tinto Reserva D.O. Rioja
+name: Marquï¿½s de Riscal Vino Tinto Reserva D.O. Rioja
 id: 7408
 date: 2011-09-10 17:20:00
 url: https://www.ulabox.com/producto/marques-de-riscal-vino-tinto-reserva-d-o-rioja/7408
