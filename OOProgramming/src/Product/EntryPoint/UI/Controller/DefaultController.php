@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\EntryPoint\UI\Controller;
+namespace App\Product\EntryPoint\UI\Controller;
 
-use App\Domain\Product\Product;
-use App\Application\Product\ParseFeed\ProductParseFeedCommand;
+use App\Product\Domain\Product\Product;
+use App\Product\Application\Product\FeedParser\ProductFeedParserCommand;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Messenger\MessageBusInterface;
 use Symfony\Component\Messenger\Stamp\HandledStamp;
@@ -23,7 +23,7 @@ final class DefaultController
         $jsonResponse = [];
 
         /** @var HandledStamp $envelope */
-        $envelope = $this->commandBus->dispatch(new ProductParseFeedCommand())->last(HandledStamp::class);
+        $envelope = $this->commandBus->dispatch(new ProductFeedParserCommand())->last(HandledStamp::class);
 
         foreach ($envelope->getResult() as $product)
         {

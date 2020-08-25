@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Domain\Product;
+namespace App\Product\Domain\Product;
 
 final class Product
 {

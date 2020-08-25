@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace App\Application\Product\ParseFeed;
+namespace App\Product\Application\Product\FeedParser;
 
-use App\Domain\Product\IProductParser;
+use App\Product\Domain\Product\IProductParser;
 use Symfony\Component\Messenger\Handler\MessageHandlerInterface;
 
-final class ProductParseFeedHandler implements MessageHandlerInterface
+final class ProductFeedParserHandler implements MessageHandlerInterface
 {
     private IProductParser $productParser;
 
@@ -16,7 +16,7 @@ final class ProductParseFeedHandler implements MessageHandlerInterface
         $this->productParser = $productParser;
     }
 
-    public function __invoke(ProductParseFeedCommand $command): array
+    public function __invoke(ProductFeedParserCommand $command): array
     {
         return $this->productParser->parse();
     }

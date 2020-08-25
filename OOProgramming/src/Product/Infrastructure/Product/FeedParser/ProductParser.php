@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace App\Infrastructure\Product\FeedParser;
+namespace App\Product\Infrastructure\Product\FeedParser;
 
-use App\Domain\Product\IProductParser;
-use App\Domain\Product\Product;
-use App\Domain\Product\ProductException;
-use App\Domain\Product\ProductId;
-use App\Domain\Product\ProductLink;
-use App\Domain\Product\ProductPubDate;
-use App\Domain\Product\ProductTitle;
+use App\Product\Domain\Product\IProductParser;
+use App\Product\Domain\Product\Product;
+use App\Product\Domain\Product\ProductException;
+use App\Product\Domain\Product\ProductId;
+use App\Product\Domain\Product\ProductLink;
+use App\Product\Domain\Product\ProductPubDate;
+use App\Product\Domain\Product\ProductTitle;
 use App\Shared\Domain\FeedParser\EventType\EventName;
 use App\Shared\Domain\Observer\IObserver;
 use App\Shared\Infrastructure\FeedParser\EmptyFeedException;

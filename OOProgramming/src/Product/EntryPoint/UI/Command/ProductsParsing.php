@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\EntryPoint\UI\Command;
+namespace App\Product\EntryPoint\UI\Command;
 
-use App\Application\Product\ParseFeed\ProductParseFeedCommand;
-use App\Domain\Product\Product;
+use App\Product\Application\Product\FeedParser\ProductFeedParserCommand;
+use App\Product\Domain\Product\Product;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -29,7 +29,7 @@ final class ProductsParsing extends Command
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         /** @var HandledStamp $envelope */
-        $envelope = $this->commandBus->dispatch(new ProductParseFeedCommand())->last(HandledStamp::class);
+        $envelope = $this->commandBus->dispatch(new ProductFeedParserCommand())->last(HandledStamp::class);
 
         foreach ($envelope->getResult() as $product) {
             /**@var Product $product **/
